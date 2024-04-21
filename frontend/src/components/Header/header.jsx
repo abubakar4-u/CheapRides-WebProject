@@ -1,14 +1,15 @@
 import {Navbar, Nav, Container, NavbarCollapse} from 'react-bootstrap';
 import { FaCar, FaBuilding, FaCreativeCommonsBy, FaRegFaceGrinWink } from "react-icons/fa6";
 
-import React from 'react'
+import React from 'react';
+import './style.css';
 
 const Header = () => {
   return (
     <header>
         <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
             <Container>
-                <Navbar.Brand href="/">CheapRides</Navbar.Brand>
+                <Navbar.Brand href="/">Cheap<span>Rides</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navnar-nav" />
                 <NavbarCollapse id="basic-navbar-nav">
                     <Nav className='ms-auto'>

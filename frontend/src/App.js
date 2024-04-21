@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import Header from "./components/header";
+import Header from "./components/Header/header";
 import React from 'react'
 
 function App() {
