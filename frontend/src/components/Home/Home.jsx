@@ -48,50 +48,43 @@ function Home() {
             <Carousel responsive={responsive}>
                 <div className="homeImage">
                     <img className='product--image' src={CarImage} alt="car"/>
-                    <h2>Sedans - C Segment</h2>
-                    <p className="price">Starting from Rs.900</p>
-                    <p>.........</p>
-                    <p>
-                        <button>Sedans</button>
-                    </p>
+                    <p>Sedans - B/C Segment</p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={AudiImage} alt="audi"/>
-                    <h2>Exotics</h2>
-                    <p className="price">Starting from Rs.40,000</p>
-                    <p>.........</p>
-                    <p>
-                        <button>Exotics</button>
-                    </p>
+                    <p>Exotics</p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={BikeImage} alt="bike"/>
-                    <h2>Bike</h2>
-                    <p className="price">Starting from Rs.400</p>
-                    <p>.........</p>
-                    <p>
-                        <button>Bike</button>
-                    </p>
+                    <p>Bike</p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={BusImage} alt="bike"/>
-                    <h2>Coasters</h2>
-                    <p className="price">Starting from Rs.10,000</p>
-                    <p>.........</p>
-                    <p>
-                        <button>Coasters</button>
-                    </p>
+                    <p>Coasters</p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={TruckImage} alt="bike"/>
-                    <h2>Truck</h2>
-                    <p className="price">Starting from Rs.100,000</p>
-                    <p>.........</p>
-                    <p>
-                        <button>Trucks</button>
-                    </p>
+                    <p>Truck</p>
                 </div>
             </Carousel>;
+
+            <div class="form-container">
+                <form actions="">
+                    <div className="input-box">
+                        <span>Location</span>
+                        <input type="search" name="" id="" placeholder="Search Places"/>
+                    </div>
+                    <div className="input-box">
+                        <span>Pick-Up Date</span>
+                        <input type="date" name="" id="" />
+                    </div>
+                    <div className="input-box">
+                        <span>Return Date</span>
+                        <input type="date" name="" id="" />
+                    </div>
+                    <input type="submit" name="" id="" class="fbtn"/>
+                </form>
+            </div>
         </div>
     </div>
   )

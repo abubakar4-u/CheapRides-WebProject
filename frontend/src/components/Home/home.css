@@ -7,6 +7,7 @@
     text-align: center;
     display: grid;
     gap: 2rem;
+    position: relative;
 
     .hometext{
         .homeSpan{
@@ -21,7 +22,7 @@
 
     
     .homeImage {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px 0 rgba(105, 36, 36, 0.2);
         max-width: auto;
         margin: auto 1rem;
         text-align: center;
@@ -34,26 +35,43 @@
         object-fit:cover;
     }
 
-    .price {
-        color: grey;
-        font-size: 22px;
+    .form-container {
+        display: flex;
+        justify-content: center; /* Center the form horizontally */
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        right: 0; /* Make sure the form stretches to the container's width */
     }
 
-    .homeImage button {
-        border: none;
-        outline: 0;
-        padding: 12px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
-    }
-      
-    .homeImage button:hover {
-        background-color: red;
-        color: white;
+    .form-container form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        box-shadow: 0 4px 8px 0 rgba(105, 36, 36, 0.2);
+        padding: 20px;
+        border-radius: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
     }
 
+    .input-box span{
+        margin-right: 4px;
+    }
+
+    .form-container form .fbtn{
+        border-radius: 20px; 
+        padding: 8px 20px; 
+        background-color: #ff0505; 
+        color: #fff; 
+        border: none; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form-container form .fbtn:hover {
+        background-color: #ff6f00; 
+    }
 }
