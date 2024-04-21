@@ -17,11 +17,10 @@ const Header = () => {
                         <Nav.Link href='/Ride'><FaCar/>Ride</Nav.Link>
                         <Nav.Link href="/Services"><FaCreativeCommonsBy/>Services</Nav.Link>
                         <Nav.Link href="/Reviews"><FaRegFaceGrinWink/>Reviews</Nav.Link>
-
                     </Nav>
                 </NavbarCollapse>
             </Container>
-        </Navbar>
+        </Navbar>  
     </header>
   )
 }

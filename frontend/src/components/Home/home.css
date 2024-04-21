@@ -1,0 +1,59 @@
+.home{
+    padding-top: 20px;
+}
+
+.sectionContainer{
+    padding: 0 1 1.5rem;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+
+    .hometext{
+        .homeSpan{
+            font-size: 30px;
+            color:black;
+        }
+
+        .homeTitle{
+            color: rgb(255, 0, 0);
+        }
+    }
+
+    
+    .homeImage {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: auto;
+        margin: auto 1rem;
+        text-align: center;
+        font-family: arial;
+    }
+
+    .product--image{
+        width: auto;
+        height: 12em;
+        object-fit:cover;
+    }
+
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+
+    .homeImage button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+      
+    .homeImage button:hover {
+        background-color: red;
+        color: white;
+    }
+
+}
