@@ -30,13 +30,13 @@ function Home() {
           breakpoint: { max: 464, min: 0 },
           items: 1
         }
-      };
+    };
   return (
     <div className='home'>
         <div className="sectionContainer">
             <div class="hometext">
                 <span className="homeSpan">
-                    Meet your ride
+                    Meet our Services
                 </span>
                 <h1 className="homeTitle">
                     Economy - Exotic Rides
@@ -44,31 +44,47 @@ function Home() {
             </div>
 
             
-
+        
             <Carousel responsive={responsive}>
                 <div className="homeImage">
                     <img className='product--image' src={CarImage} alt="car"/>
                     <p>Sedans - B/C Segment</p>
+                    <p>
+                        <button>Book Sedan</button>
+                    </p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={AudiImage} alt="audi"/>
                     <p>Exotics</p>
+                    <p>
+                        <button>Book Exotic</button>
+                    </p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={BikeImage} alt="bike"/>
                     <p>Bike</p>
+                    <p>
+                        <button>Book Bike</button>
+                    </p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={BusImage} alt="bike"/>
                     <p>Coasters</p>
+                    <p>
+                        <button>Book Coaster</button>
+                    </p>
                 </div>
                 <div className="homeImage">
                     <img className='product--image' src={TruckImage} alt="bike"/>
                     <p>Truck</p>
+                    <p>
+                        <button>Book Truck</button>
+                    </p>
                 </div>
             </Carousel>;
 
-            <div class="form-container">
+            <h3 class="L1">Enter Location</h3>
+            <div class="form-container" responsive1={responsive}>
                 <form actions="">
                     <div className="input-box">
                         <span>Location</span>

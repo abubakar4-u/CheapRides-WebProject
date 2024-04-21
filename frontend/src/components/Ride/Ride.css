@@ -1,0 +1,43 @@
+.ride{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.ride .heading {
+    margin-top: 100px; /* Add margin to push the content down */
+}
+
+.ride .heading span {
+    font-size: 24px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ride .heading h1 {
+    font-size: 36px;
+    color: rgb(255, 0, 0);
+}
+
+.ride-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns:repeat(auto-fit,minmax(250px, auto));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.ride-container .box svg {
+    font-size: 35px; /* Adjust the size of the icons as needed */
+    color: red; /* Set the color of the icons */
+}
+
+.ride-container .box h2 {
+    font-size: 24px;
+    color: black;
+    padding-top: 5px;
+}
+
+.ride-container .box p {
+    font-size: 16px;
+    color: black;
+}

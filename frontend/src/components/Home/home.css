@@ -2,6 +2,24 @@
     padding-top: 20px;
 }
 
+
+.homeImage button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.homeImage button:hover {
+    background-color: red;
+    color: white;
+}
+
 .sectionContainer{
     padding: 0 1 1.5rem;
     text-align: center;
@@ -42,6 +60,7 @@
         bottom: -90px;
         left: 0;
         right: 0; /* Make sure the form stretches to the container's width */
+       
     }
 
     .form-container form {
@@ -73,5 +92,11 @@
 
     .form-container form .fbtn:hover {
         background-color: #ff6f00; 
+    }
+
+    .L1{
+        margin-top: -30px;
+        margin-bottom: 50px; 
+        color: #ff0505;
     }
 }

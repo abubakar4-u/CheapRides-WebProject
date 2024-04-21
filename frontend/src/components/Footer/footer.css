@@ -1,0 +1,54 @@
+.newsletter {
+    background: linear-gradient(to top left, #ff0000, #ff6666);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.newsletter h2{
+    margin-top: 3px;
+    color: white;
+    font-size: 1.8rem;
+}
+.newsletter .box{
+    margin-top: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.newsletter .box input{
+    border: none;
+    outline: none;
+}
+
+.newsletter .box .btn{
+    background: black;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+}
+
+.newsletter .box .btn:hover{
+    background: rgb(255, 0, 0);
+    color: white;
+}
+
+.copyright .social svg{
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.copyright .social svg:hover{
+    color: red;
+}
+.copyright{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
