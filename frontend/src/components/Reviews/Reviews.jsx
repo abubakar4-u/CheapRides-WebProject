@@ -31,7 +31,7 @@ function Reviews() {
         <div class="heading">
             <span>Reviews</span>
             <h1>What Our Customer Experiences</h1>
-        </div>
+        </div>;
         
         <div class="review-container">
             <div class="box">

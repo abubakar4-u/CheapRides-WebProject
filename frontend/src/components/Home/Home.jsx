@@ -11,6 +11,10 @@ import BikeImage from '../../Assests/bike1.png';
 import BusImage from '../../Assests/BusOrig.png';
 import TruckImage from '../../Assests/redtruck.png';
 
+
+import Ride from '../Ride/Ride';
+import Reviews from '../Reviews/Reviews';
+
 function Home() {
     const responsive = {
         superLargeDesktop: {
@@ -100,10 +104,13 @@ function Home() {
                     </div>
                     <input type="submit" name="" id="" class="fbtn"/>
                 </form>
-            </div>
+            </div>;
         </div>
+
+        <Ride />
+        <Reviews />
     </div>
   )
 }
 
-export default Home
+export default Home;

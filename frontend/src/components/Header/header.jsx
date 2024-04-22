@@ -1,6 +1,6 @@
 import {Navbar, Nav, Container, NavbarCollapse} from 'react-bootstrap';
 import { FaCar, FaBuilding, FaCreativeCommonsBy, FaRegFaceGrinWink } from "react-icons/fa6";
-
+import Button from 'react-bootstrap/Button';
 import React from 'react';
 import './style.css';
 
@@ -17,6 +17,8 @@ const Header = () => {
                         <Nav.Link href='/Ride'><FaCar/>Ride</Nav.Link>
                         <Nav.Link href="/Services"><FaCreativeCommonsBy/>Services</Nav.Link>
                         <Nav.Link href="/Reviews"><FaRegFaceGrinWink/>Reviews</Nav.Link>
+                        <Button variant="outline-primary">Login</Button>{' '}
+                        <Button variant="outline-success">SignUp</Button>{' '}
                     </Nav>
                 </NavbarCollapse>
             </Container>

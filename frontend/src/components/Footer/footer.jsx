@@ -10,7 +10,8 @@ function footer() {
 
             <div class="box">
                 <input type="text" placeholder="Enter Your Email"/>
-                <a href="#" class="btn">Subscribe</a>
+                
+                <button className="btn">Subscribe</button>
             </div>
         </section>
         <div class="copyright">
