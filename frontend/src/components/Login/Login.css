@@ -94,3 +94,10 @@
     background: #EAEAEA;
     color: red;
 }
+
+/* Add this CSS to your existing styles */
+.login-input select {
+    position: relative;
+    width: 105px;
+    border-radius: 6px;
+}
