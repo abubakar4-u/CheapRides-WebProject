@@ -6,6 +6,8 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/footer";
 import Login from "./components/Login/Login";
 
+import RiderModuleScreen from './Screens/RiderModuleScreen';
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/riderscreen" element={<RiderModuleScreen/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
