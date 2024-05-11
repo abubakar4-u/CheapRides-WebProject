@@ -71,7 +71,7 @@ function Login() {
               </>
             )}
         </div>
-        {action === "Sign Up" ? (
+        {action === "Login" ? (
           <div className="login-forgot-password">
               Forgot Password? <span>Click Here!</span>
           </div>

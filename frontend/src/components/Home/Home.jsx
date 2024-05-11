@@ -91,8 +91,12 @@ function Home() {
             <div class="form-container" responsive1={responsive}>
                 <form actions="">
                     <div className="input-box">
-                        <span>Location</span>
-                        <input type="search" name="" id="" placeholder="Search Places"/>
+                        <span>PickupLocation</span>
+                        <input type="search" name="" id="" placeholder="Pickup Location"/>
+                    </div>
+                    <div className='input-box'>
+                        <span>DropLocation</span>
+                        <input type="search" name="" id="" placeholder="Drop Location"/>
                     </div>
                     <div className="input-box">
                         <span>Pick-Up Date</span>
