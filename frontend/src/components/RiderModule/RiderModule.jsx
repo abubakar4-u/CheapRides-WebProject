@@ -2,6 +2,7 @@ import { Card } from "react-bootstrap";
 import './RiderModule.css';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { BsPlusLg } from "react-icons/bs";
 
 const Ride = ({ rides }) => {
     /*const history = useHistory();*/
@@ -33,8 +34,9 @@ const Ride = ({ rides }) => {
                         <Button variant="outline-warning">History</Button>
                     </div>
                 </Card.Body>
-            </Card>
+            </Card>  
+             
         </div>
-    )
+    );
 }
 export default Ride;

@@ -6,6 +6,7 @@ import Footer from "./components/Footer/footer";
 import Login from "./components/Login/Login";
 import RiderModuleScreen from './Screens/RiderModuleScreen';
 import RiderUpdate from './components/RiderModule/RiderUpdate';
+import RideAddCar from './components/RiderModule/RiderAddCar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/riderscreen" element={<RiderModuleScreen />} />
           <Route path="/ride-update/:id" element={<RiderUpdate />} /> {/* Pass ride object here */}
+          <Route path="/ride-addcar" element={<RideAddCar/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
