@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import rides from '../../rides'; // Adjust the path as needed
 import './RiderUpdate.css';
 import {Link} from "react-router-dom";
-import { BsCarFrontFill, BsBook, BsLightbulbFill, BsCapslock} from "react-icons/bs";
+import { BsCarFrontFill, BsBook, BsLightbulbFill, BsCapslock, BsArrowRepeat} from "react-icons/bs";
 import { FaDeploydog, FaDollarSign } from "react-icons/fa";
 
 const RiderUpdate = () => {
@@ -59,6 +59,7 @@ const RiderUpdate = () => {
                 <FaDollarSign/>
                 <input type="text" name="price" value={ride.price} onChange={handleInputChange} disabled={!isEditing}/>
             </div>
+            
         </div>
         )}
 

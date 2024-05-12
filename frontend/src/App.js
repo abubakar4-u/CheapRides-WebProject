@@ -9,6 +9,8 @@ import RiderUpdate from './components/RiderModule/RiderUpdate';
 import RideAddCar from './components/RiderModule/RiderAddCar';
 import CustomerModuleScreen from './Screens/CustomerModuleScreen';
 import CustomerBookRide from './components/CustomerModule/CustomerBookRide';
+import CustomerEditInfo from './components/CustomerModule/CustomerEditInfo';
+import CustomerUpdateScreen from './Screens/CustomerUpdateScreen';
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
           <Route path="/ride-addcar" element={<RideAddCar/>}/>
           <Route path="/customer-bookride" element={<CustomerModuleScreen/>}/>
           <Route path="/customer-booked" element={<CustomerBookRide/>}/>
+          <Route path="/customer-info1" element={<CustomerUpdateScreen/>}/>
+          <Route path="/customer-info/:id" element={<CustomerEditInfo/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

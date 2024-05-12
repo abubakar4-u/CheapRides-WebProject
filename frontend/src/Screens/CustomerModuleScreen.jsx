@@ -4,13 +4,18 @@ import rides from '../rides';
 import CustomerModule from '../components/CustomerModule/CustomerModule';
 import { Link } from 'react-router-dom';
 import './CustomerModuleScreen.css';
+import Customer from '../customer'; // Ensure the correct import path for Customer data
 
 const CustomerModuleScreen = () => {
+  const someCustomerId = Customer[0]._id; // Assuming you want to edit the first customer
+
   return (
     <>
-        <div style={{ display: 'flex', alignItems: 'center' }}> {/* Added a wrapper div */}
-            <h1 style={{ marginLeft: '20px' }}>Latest Rides</h1>
-            <Link to="/edit-information" style={{ textDecoration: 'none', marginTop:'40px' }}><button className='login-submit'> Edit Perosnal Information </button></Link>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+            <h1 style={{ marginLeft: '20px' }}>Available Rides</h1>
+            <Link to={`/customer-info/${someCustomerId}`} style={{ textDecoration: 'none', marginTop:'40px' }}>
+              <button className='login-submit'>Edit Personal Information</button>
+            </Link>
         </div>
         <Row>
             {rides.map((ride) => (
@@ -23,4 +28,4 @@ const CustomerModuleScreen = () => {
   )
 }
 
-export default CustomerModuleScreen
+export default CustomerModuleScreen;
