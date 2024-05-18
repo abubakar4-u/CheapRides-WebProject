@@ -22,7 +22,7 @@ const CustomerModule = ({ rides }) => {
                     </a>
                     {/* Buttons displayed below the ride name */}
                     <p>
-                        <Link to="/customer-booked"><Button className='Sbtn'>Book Sedan</Button></Link>
+                        <Link to="/customer-booked"><Button className='Sbtn'>Book Ride</Button></Link>
                     </p>
                 </Card.Body>
             </Card> 

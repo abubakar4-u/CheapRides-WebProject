@@ -14,9 +14,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navnar-nav" />
                 <NavbarCollapse id="basic-navbar-nav">
                     <Nav className='ms-auto'>
-                        <Nav.Link href="/Home"><FaBuilding/>Home</Nav.Link>
-                        <Nav.Link href='/Ride'><FaCar/>Ride</Nav.Link>
-                        <Nav.Link href="/Services"><FaCreativeCommonsBy/>Services</Nav.Link>
+                        
+                        <Nav.Link as={Link} to="/"><FaBuilding/>Home</Nav.Link>
+                        <Nav.Link href='/riderscreen'><FaCar/>Ride</Nav.Link>
+                        <Nav.Link href="/customer-bookride"><FaCreativeCommonsBy/>Services</Nav.Link>
                         <Nav.Link href="/Reviews"><FaRegFaceGrinWink/>Reviews</Nav.Link>
                         <Link to="/login"><Button variant="outline-primary">Login</Button></Link>{' '}
                         <Link to="/login"><Button variant="outline-success">SignUp</Button></Link>{' '}

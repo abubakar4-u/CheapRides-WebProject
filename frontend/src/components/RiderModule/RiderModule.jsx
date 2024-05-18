@@ -13,7 +13,7 @@ const Ride = ({ rides }) => {
     return (
         <div className='rideimg'>
             <Card className="my-3 p-2 rounded h-100 custom-card-width">
-                <a href={`/rides/${rides._id}`}>
+                <a href={`/rides/${rides._id}`}>  {/*Change to id later */}
                     <Card.Img className='product-image' src={rides.image} />
                 </a>
 

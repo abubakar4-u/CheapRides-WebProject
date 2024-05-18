@@ -1,17 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Customers from '../../customer'; // Adjust the path as needed
+import axios from 'axios';
+//import Customers from '../../customer'; // Adjust the path as needed
 import './CustomerEditInfo.css';
 import {Link} from "react-router-dom";
-import { BsEye, BsPhone, BsPinMapFill, BsPersonDashFill, BsBookFill } from "react-icons/bs";
+import { BsEye, BsPhone, BsPinMapFill, BsPersonDashFill, BsBookFill, BsFillPersonFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const CustomerEditInfo = () => {
-    const { id } = useParams(); // Extracting id from URL
-    const originalCust= Customers.find(c => c._id === id); // Finding the specific ride
-    const [cust, setCust] = useState(originalCust); // Setting up state for the ride
-    const [isEditing, setIsEditing] = useState(false); // State to track if editing mode is on
+    console.log("Customer Edit Info call customer api");
 
+    const { id } = useParams(); // Extracting id from URL
+    //const originalCust= Customers.find(c => c._id === id); // Finding the specific ride
+    const [cust, setCust] = useState(null); // Setting up state for the ride
+    const [isEditing, setIsEditing] = useState(false); // State to track if editing mode is on
+    // Fetch user data from the server
+    useEffect(() => {
+        const fetchCustomer = async () => {
+            try {
+                console.log(`Fetching customer with id: ${id}`); // Debugging log
+                const response = await axios.get(`/api/customer/${id}`);
+                setCust(response.data); // Set fetched data to state
+            } catch (error) {
+                console.error('Failed to fetch customer data:', error);
+            }
+        };
+    
+        if (id) { // Ensure id is present
+            fetchCustomer();
+        } else {
+            console.error('Invalid ID:', id);
+        }
+    }, [id]); // Dependency array with ID to refetch if ID changes
+    
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setCust(prevState => ({
@@ -21,11 +42,14 @@ const CustomerEditInfo = () => {
     };
 
     const handleUpdate = () => {
-        // Logic to update the ride information
-        console.log("Updated Ride:", cust);
-        // You can add logic here to send the updated data to your backend
-        // For simplicity, just logging the updated ride object for now
+        //console.log("Updated Ride:", ride);
+        // Add axios PUT request here to update data in backend
     };
+
+    if (!cust) {
+        return <div>No customer Found...</div>; // Show loading state while data is being fetched
+    }
+
   
     return (
         <div className='login-container'>
@@ -42,6 +66,10 @@ const CustomerEditInfo = () => {
             <div className="login-input">
                 <BsBookFill/>
                 <input type="text" name="username" value={cust.username} onChange={handleInputChange} disabled={!isEditing}/>
+            </div>
+            <div className="login-input">
+                <BsFillPersonFill/>
+                <input type="text" name="email" value={cust.email} onChange={handleInputChange} disabled={!isEditing}/>               
             </div>
             <div className="login-input">
                 <BsEye/>
@@ -73,4 +101,4 @@ const CustomerEditInfo = () => {
     )
 }
 
-export default CustomerEditInfo
+export default CustomerEditInfo;

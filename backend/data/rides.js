@@ -1,6 +1,5 @@
 const rides = [
     {
-        _id:'66413924ea717acd8d01f2e',
         name: 'Civic Type-R',
         image: '/images/civic.png',
         description: 
@@ -13,7 +12,6 @@ const rides = [
         numReviews: 12,
     },
     {
-        _id:'66413924ea717acd8d01f2ed',
         name: 'Audi R8 2012',
         image: '/images/audi1.png',
         description: 
@@ -26,7 +24,6 @@ const rides = [
         numReviews: 90,
     },
     {
-        _id:'3',
         name: 'Ducati 575',
         image: '/images/bike1.png',
         description: 
@@ -39,7 +36,6 @@ const rides = [
         numReviews: 5,
     },
     {
-        _id:'4',
         name: 'Toyota HighRoof Eclipse',
         image: '/images/BusOrig.png',
         description: 
@@ -52,7 +48,6 @@ const rides = [
         numReviews: 190,
     },
     {
-        _id:'5',
         name: 'IVECO 602',
         image: '/images/redtruck.png',
         description: 

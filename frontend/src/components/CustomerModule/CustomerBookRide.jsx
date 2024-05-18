@@ -1,6 +1,11 @@
+//customer ride booking page
+//customer confirm ride from this page
+
 import React from 'react'
 import {Link} from "react-router-dom";
 import { BsArrowDownRightSquare, BsArrowUpLeftSquare, BsCalendar2Minus, BsCalendar2MinusFill } from "react-icons/bs";
+import { MdAttachMoney } from "react-icons/md";
+
 import { Button } from 'react-bootstrap';
 import './CustomerBookRide.css';
 
@@ -24,7 +29,7 @@ const CustomerBookRide = () => {
 
                 <div className='login-input'>
                     <BsCalendar2Minus/>
-                    <input type="date" placeholder='pickupdate'/>
+                    <input type="date" placeholder='date'/>
                 </div>
 
                 <div className='login-input'>
@@ -32,9 +37,10 @@ const CustomerBookRide = () => {
                     <input type="date" placeholder='pickupdate'/>
                 </div>
 
+                {/* payment placeholder*/}
                 <div className='login-input'>
-                    <BsCalendar2MinusFill/>
-                    <input type="date" placeholder='pickupdate'/>
+                    <MdAttachMoney />
+                    <input type="text" placeholder='payment'/>
                 </div>
 
                 <div className='login-submit-container'>
